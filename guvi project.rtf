@@ -1,0 +1,207 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\colortbl ;\red255\green0\blue0;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9                                                              GUVI PROJECT\par
+\par
+1.Write a program to find out the prime numbers ?\par
+Is a natural number greater than 1 that has no positive divisors other than 1 and itself.\par
+num=int(input())\par
+                # assign the variable to get the input from  user ,the enter value is convert in integer ,if                                 we are check the only numbers.\par
+if num>1:\par
+          # if 0,1 is not a prime number , if number is greter then the 1 ,condition is true ,loop is excuted.\par
+    for i in range(2,num):\par
+        # the loop is create for given number is divisible for before numbers or not ,check the numbers. the range function is create the loop for given number.\par
+        if(num%i)==0 :\par
+        # if condition is given number is modulus of range number is equal to 0 , the condition is true excute.\par
+# the range function is create for (2,given number),the range is get number (2,given number-1).\par
+   # no positive divisors other than 1 and itself . the loop is  check the condition the condition is true, that number is divisible by other number is not a prime number.\par
+            print(num,"not a prime num")\par
+      # the condition is true print statement is excuted.\par
+            break\par
+   #the condition is true break the loop.\par
+    else:\par
+   # the condition is false ,Else statement is excuted.\par
+        print(num,"is a prime num")\par
+else:\par
+    # the gibven number is below 1 ,the else statement is excuted.\par
+    print(num,"is not a prime num")\par
+\cf1 OUTPUT :\par
+13  \par
+# GIVEN NUMBER\par
+13 is a prime num \par
+# ITS PRIME OR NOT\par
+\cf0\par
+2.write a program to create the equation (a+b+c) *  (a-b-c) * ab + a^2 + b ^2 + (abc)^3 :\par
+The Equation contain 3 variable and arithmatics operation are involved.\par
+a= int(input())\par
+   # To get the input as integer from the user is stored a value in variable : a \par
+b=int(input())\par
+   #To get the input as integer from the user is stored a value in variable : b\par
+c=int(input())\par
+  #To get the input as integer from the user is stored a value in variable : c\par
+d=(a+b+c)*(a-b-c)*(a*b)+(a**2)+(b**2)+((a*b*c)**3)\par
+  # create the variable for d is stored the value of arithmatic operation.(+,-,*,**),(* =multiply),(**= power)\par
+d\par
+  # the d is print the value of variable.\par
+\cf1 OUTPUT :\par
+2\par
+3\par
+4\par
+# ENTER THE THREE VALUE\par
+13567\par
+ #  OUTPUT IS GIVEN EQUATION \par
+\cf0\par
+\par
+3. urlist = ['wood','knife','axe'] , mylist = ['tree', 'apple', 'mango', 'melon'] \f1\endash  combine two lists\par
+\f0\lang1033    # the given two list is combined the single list.\par
+urlist = ['wood','knife','axe']\par
+  # given list is stored in variable.\par
+mylist = ['tree', 'apple', 'mango', 'melon']\par
+    # given list is stored in variable.\par
+urlist.extend(mylist)\par
+   # the extend method is combine the given list(mylist) in end of the extended list(urlist)\par
+print(urlist)\lang9\par
+  # print the list.\par
+\cf1 OUTPUT :\par
+['wood', 'knife', 'axe', 'tree', 'apple', 'mango', 'melon']\par
+ # CONVERT THE SINGLE LIST.\par
+\cf0\par
+4.write a program for natural number based on user input :\par
+ \par
+   # the natural numbers are those numbers used for counting  and ordering .\par
+  # zero as the whole numbers,start with 1, corresponding to the positive integers.\par
+n=int(input())\par
+  # n is a variable to get the input from user and store the variable .\par
+natural_number=[]\par
+  # natural_number is a variable in creating a empty list.\par
+for i in range(0,n):\par
+  # for loop is used to range the given numbers.\par
+    if i>=1:\par
+  # if condition i is greter then are equal to 1 (positive numbers) is true.\par
+        natural_number.append(i)\par
+   # natural_number is a empty list ,append the value (i), if condition is true .\par
+print(natural_number) \par
+    #print the value in natural_numbers in list.\par
+\cf1 OUTPUT :\par
+7\par
+# ENTER THE NUMBER\par
+[1, 2, 3, 4, 5, 6]\par
+# OUTPUT IS SHOWING LIST FOR NATURAL NUMBERS IN GIVEN VALUE\par
+\cf0\par
+5.write class and function for the equation sqrt(x1-x2) ^ 2 + sqrt( y1 \f1\endash  y2 ) ^2 using try except handling\par
+\f0\lang1033   # try ,except, try is excute the function anything is error and except is excuted that type of error is display.\f1\lang9\par
+try: \par
+\f0\lang1033  # calling the try function with colen.\f1\lang9\par
+    class root():\par
+\f0\lang1033   # create the class  and constuct the variable in (__init__) (x1,x2,y1,y2)\f1\lang9\par
+        def __init__(self,x1,x2,y1,y2):\par
+            self.x1=x1\par
+            self.x2=x2\par
+            self.y1=y1\par
+            self.y2=y2\par
+        \par
+        def maths(self):\par
+\f0\lang1033   # create the function in squareroot of given value and return the value in add(x+y).\f1\lang9\par
+            x=((self.x1-self.x2)**2)*0.5\par
+            y=((self.y1-self.y2)**2)*0.5\par
+            return x+y\par
+        def __str__(self):\par
+\f0\lang1033    #  create the (__str__) is return the value.\f1\lang9\par
+            return x+y\par
+      \par
+except:\par
+\f0\lang1033   #  try concept is not excute then except concept is showing error.\f1\lang9\par
+    print("type errors")\par
+\par
+f=root(6,7,2,4)\par
+\f0\lang1033   # f is variable call the function and give the parameter value and variable is act the object.\f1\lang9\par
+d=f.maths()\par
+\f0\lang1033   # d is variable ,its store the object function.\f1\lang9\par
+d\par
+\f0\lang1033     # type the d is display the value.\par
+\cf1 OUTPUT :\par
+2.5\par
+# DISPLAY THE given value in equation.\par
+\cf0\par
+\par
+6. Name  = \ldblquote Guvi python\rdblquote   - write a program to get \ldblquote python\rdblquote  word from the string :\par
+\par
+Name = "Guvi python"\par
+  # create the variable and store the value in string.\par
+print(Name[5:11])\par
+  # print the variable and if want the particular sting ,using slice the string for index position.\par
+\cf1 OUTPUT :\par
+python\par
+# SLICING THE PARTICULAR CHARACTER.\par
+\cf0\par
+7.Using class and function - Write a program for palindrome Ex. Madam :\par
+ # palindrome is read the word in left to right ,right to left . the value is same .\par
+class name():\par
+  # create the class and construct (x1).\par
+    def __init__(self,x1):\par
+        self.a=x1\par
+    def pali(self):\par
+  # create the function name(pali) .\par
+        b=self.a[::-1]\par
+  # create the variable  and [::-1] is stored the variable in reverse order.\par
+        if self.a==b:\par
+  # if condtion is true ,print \par
+            print("yes")\par
+        else:\par
+  # if condition is false ,and excute the else condition.\par
+            print("no")\par
+\par
+a=name("madam")\par
+  # create the variable and call the class and give the string , its store the object.\par
+a.pali()\par
+  # call the function and excute the creating object.\par
+\cf1 OUTPUT :\par
+yes\par
+# GIVEN VALUE IS PALINDROME OR NOT.\par
+\cf0\par
+8.using file handling \f1\endash  write a text file in ur system with \ldblquote hello world\rdblquote :\par
+\f0   # create the variable and call the open function ,its open the file in closed paranthesis given the file name and text format ,given the mode.\f1\par
+f=open("guvifile.txt","w")\par
+\f0   # is write method is write the file in closed paranthesis.\f1\par
+f.write("hello world")\par
+\f0   # close function is closed the file then the file is showed in anything chaning the documents.\f1\par
+f.close()\par
+\cf1\par
+\f0 OUTPUT :\par
+CREATE THE FILE FOR PYTHON PATH IN  YOUR PC .\par
+\cf0\f1\par
+#9.create option button using tkinter GUI in python:\par
+\f0   # tkinter is in_built function is useful the GUI.\par
+  # import the library\f1\par
+from tkinter import *\par
+\f0   # create the web page . \f1\par
+root = Tk()\par
+\f0   # call the button function and create the button give the where is create and what in text in text atriputes.\f1\par
+b= Button(root, text="option")\par
+\f0   #  pack method  is using the button package\f1\par
+b.pack()\par
+\f0   #mainloop is excute the function.\f1\par
+root.mainloop()\par
+\cf1\f0 OUTPUT :\par
+CRAETE THE NEW DISPLAY IN YOUR PC AND BUTTON OPTION\cf0 .\f1\par
+\par
+\par
+#10.Keep only numbers from the following string x = \ldblquote  89e9jcd^o38829@3%3,/mkl$w1\rdblquote :\par
+\f0   # create the variable and store the string.\f1\par
+x = "89e9jcd^o38829@3%3,/mkl$w1"\par
+\f0   # create the another variable with double qutation is restored the character in string format.\f1\par
+x_nums = ""\par
+\f0   # for loop is excute the string in every single character .\f1\par
+for c in x:\par
+\f0    # if condition is true ,store the value in x_nums, isdigits method is find the numbers character .\f1\par
+    if c.isdigit():\par
+        x_nums += c\par
+\f0   # print the x_nums is showing the given string is only numbers.\f1\par
+print(x_nums)\par
+\cf1\f0 OUTPUT :\par
+89938829331\par
+# IT S SHOWING ONLY NUMBERS IN THE GIVEN STRING.\par
+\cf0\lang9\par
+\par
+}
+ 
